@@ -1,0 +1,3 @@
+id, password, rank
+5, 5, SILVER
+6, 5, NONE

@@ -1,0 +1,3 @@
+id, password, rank
+3, 3, SILVER
+4, 3, GOLD

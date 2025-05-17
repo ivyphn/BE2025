@@ -1,0 +1,3 @@
+id, password, rank
+1, 1, DIAMOND
+2, 2, GOLD

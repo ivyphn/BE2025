@@ -1,0 +1,3 @@
+name, price
+banana, 3
+orange, 6

@@ -1,0 +1,3 @@
+name, price
+tea, 5
+milk, 10

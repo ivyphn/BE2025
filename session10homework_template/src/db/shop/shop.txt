@@ -1,0 +1,4 @@
+id, name, db_path
+1,Shop 1,shop1
+2,Shop 2,shop2
+3,Shop 3,shop3
