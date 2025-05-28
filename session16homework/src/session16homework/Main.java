@@ -40,7 +40,7 @@ public class Main {
             int gap = solution.solution(number);
             System.out.println("Number: " + number +
                     "; Binary: " + Integer.toBinaryString(number) +
-                    "; Longest binary gap: " + gap);
+                    "; Longest binary gap: " + gap);    
         }
 
         Solution2 solution2 = new Solution2();
