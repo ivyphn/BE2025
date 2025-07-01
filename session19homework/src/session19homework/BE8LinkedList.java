@@ -54,10 +54,10 @@ public class BE8LinkedList {
             currentIndex++;
         }
 
-        if (currentItem.next == null) {
-            System.out.println("Index out of bounds: " + index);
-            return;
-        }
+        //if (currentItem.next == null) {
+        //System.out.println("Index out of bounds: " + index);
+        //return;
+        //}
 
         currentItem.next = currentItem.next.next;
     }
