@@ -1,24 +1,49 @@
 package session24homework;
 
-//   1 
-// 2   3
-//4
 public class Main {
     public static void main(String[] args) {
         BE8Tree tree = new BE8Tree();
-        tree.root = new BE8Node();
-        tree.root.value = 1;
 
-        tree.root.left = new BE8Node();
-        tree.root.left.value = 2;
+        // Create nodes
+        BE8Node node3 = new BE8Node(3);
+        BE8Node node2 = new BE8Node(2);
+        BE8Node node1 = new BE8Node(1);
+        BE8Node node4 = new BE8Node(4);
+        BE8Node node5 = new BE8Node(5);
+        BE8Node node6 = new BE8Node(6);
+        BE8Node node7 = new BE8Node(7);
+        BE8Node node8 = new BE8Node(8);
+        BE8Node node9 = new BE8Node(9);
 
-        tree.root.right = new BE8Node();
-        tree.root.right.value = 3;
+        // Build unbalanced tree:
+        //       3
+        //      / \
+        //     2   4
+        //    /   / \
+        //   1   5   6
+        //            \      
+        //             7
+        //              \
+        //               8
+        //                \
+        //                 9                
+                      
+        tree.root = node3;
+        node3.left = node2;
+        node2.left = node1;
+        node3.right = node4; 
+        node4.left = node5; 
+        node4.right = node6;
+        node6.right = node7; 
+        node7.right = node8;
+        node8.right = node9;
 
-        tree.root.left.left = new BE8Node();
-        tree.root.left.left.value = 4;
+        System.out.println("Before rebalancing:");
+        tree.printTreeWithLabels(tree.root, "", false);
 
-        System.out.println("Is balanced: " + tree.isBalance());
+        tree.root = tree.rebalanceSubtree(tree.root);
+
+        System.out.println("\nAfter rebalancing:");
+        tree.printTreeWithLabels(tree.root, "", false);
     }
 }
-
